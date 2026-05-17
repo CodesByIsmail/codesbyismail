@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@300;400;500;600&display=swap');
+
 @layer colors {
     :root {
         --brown: #7b542f;
@@ -34,7 +36,7 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     background: var(--light-surface);
 }
 
@@ -82,6 +84,9 @@ nav {
     color: var(--white);
     width: 100vw;
     position: fixed;
+    top: 0;
+    z-index: 10;
+
 }
 
 .navbar {
@@ -104,7 +109,8 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    left: 0rem;
+    left: 0;
+    
     z-index: 1;
     background: var(--menu-background);
     opacity: 0.95;
@@ -154,29 +160,10 @@ nav {
 
     gap: 1rem;
     text-align: center;
-    padding-top: 5rem;
+    padding: 7rem 0 3rem;
 }
 
-.ismail__profile {
-    border: solid 3px var(--secondary-amber);
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    padding: 0.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    transition: all 500ms ease-in-out;
-}
 
-.ismail__profile img {
-    object-fit: cover;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    transition: all 500ms ease-in-out;
-}
 
 .ismail__profile:hover {
     transform: translateY(-5px);
@@ -190,14 +177,14 @@ nav {
 
 .ismail__links a {
     margin-left: 1rem;
-    padding: 1rem 2rem;
-    border-radius: 30px;
+    padding: 1rem;
+    border-radius: 5px;
     border: 1px var(--warm-dark) solid;
     color: var(--warm-dark);
     transition: 0.5s ease-in-out;
 }
 
-.ismail__links a:nth-child(2) {
+.ismail__links a:first-child {
     background: var(--golden-yellow);
     color: var(--warm-dark);
     /* border-color: black; */
@@ -207,6 +194,12 @@ nav {
 
 .ismail__descr {
     margin: 2rem 0 1rem 0;
+    padding: 0 2rem;
+
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .container {
@@ -215,7 +208,7 @@ nav {
 }
 
 .skill h4 {
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 .skill {
@@ -228,7 +221,8 @@ nav {
     gap: 1rem;
     border: 1px solid var(--warm-dark);
     background: var(--light-base);
-    padding: 1rem;
+    padding: .5rem .8rem;
+
     color: var(--warm-dark);
     transition: 0.3s ease-in-out;
 }
@@ -249,8 +243,8 @@ nav {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    gap: .8rem;
+    justify-content: start;
     align-items: center;
 }
 
@@ -319,10 +313,15 @@ nav {
 
 .project {
     background: var(--light-base);
-    padding: 2rem 1rem;
     border-bottom: 5px solid var(--golden-yellow);
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
+    height: fit-content;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.85);
+    
+    img{
+        border-radius: 10px 10px 0 0;
+    }
 }
 
 .project:nth-child(2) {
@@ -350,35 +349,64 @@ nav {
 
 .project__tittle {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .project__info {
-    margin-bottom: 2rem;
-    display: none;
-    transition: all 1s ease-in-out;
+    padding: 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.project__links{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.project:hover .project__info {
-    display: block;
-    transition: all 1s ease-in-out;
-}
 
 .project a {
-    padding: 1rem 1.5rem;
-    font-size: .725rem;
+     padding: .7rem 2rem;
+    font-size: .9rem;
     text-decoration: none;
     background: var(--light-brown);
     border-radius: 40px;
-    color: var(--light-base);
-   margin-right: 1rem;
+    color: var(--light-base); 
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    
+    width: fit-content;
+    
+    
+    animation: pulse 3s linear infinite;
+    
 }
 
 .project a:hover {
     background: var(--light-base);
     color: var(--brown);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0.95);
+        box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.76);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    
+    100%{
+        transform: scale(0.95);
+        box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.76);
+    }
 }
 
 /* FIXME */
@@ -456,3 +484,5 @@ nav {
         transform: translateY(-5px);
     }
 }
+
+
