@@ -24,11 +24,11 @@ newSet.forEach(a => {
 
 const projects = [
     {
-        name: 'Quran Quiz App',
+        name: 'Tahfidh',
         projectImgUrl: '/images/quran-quizapp-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://quranquiz-app.vercel.app/',
-        projectInfo: ''
+        projectInfo: 'Tahfidh is a Quran Quiz App tailored to help you find potholes in your memorization. You take Hifdh Test, find where you are mixing, get to knwo where yiur memorization needs to be corrected. Hifdh ai here for that'
     },
     
         {
@@ -36,12 +36,28 @@ const projects = [
         projectImgUrl: '/images/rest-countries-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/rest-countries-api',
         liveUrl: 'https://rest-countries-api-five-alpha.vercel.app/',
-        projectInfo: ''
+        projectInfo: 'Rest Countries API, get to know about all countries in the world. Know about their population, currency, borders and more about every countries.'
     },
+    
+    {
+        name: 'ScreenClipo',
+        projectImgUrl: '/images/screenclipo-image.png',
+        gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
+        liveUrl: 'https://screenclipo.vercel.app/',
+        projectInfo: 'ScreenClipo is screen recorder for PC. Capture your screen, save yiur locally on your PC all on ScreenClipo.'
+    },
+    
+     {
+     name: 'Dimaj Enterprise Landing Page',
+     projectImgUrl: '/images/dimaj-image.jpg',
+     gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
+     liveUrl: 'https://dimajenterprise.vercel.app/',
+     projectInfo: "Dimaj Enterprises is a health-focused business rooted in the heart of Obafemi Awolowo University, Ile-Ife. We are passionate about one simple mission — adding value to nature's raw materials and making them fit and safe for human consumption."
+ }
 ]
 
 const projectContainer = document.querySelector('.project__wrapper')
-
+// <a href="${pro.gitUrl}">Code <svg width="24" height="24"><use href="/images/icons.svg#icon-github"></use></svg></a>
 function render(pro) {
     const markup = `
     <div class="project">
@@ -52,8 +68,8 @@ function render(pro) {
                                 ${pro.projectInfo}
                             </p>
                             <div class="project__links">
-                                 <a href="${pro.gitUrl}">Code <svg width="24" height="24"><use href="/images/icons.svg#icon-github"></use></svg></a
-                                 >
+                                 
+                                 
                                 <a href="${pro.liveUrl}">Live URL<svg width="24" height="24"><use href="/images/icons.svg#icon-live-url"></use></svg></a>
                             </div>
 
@@ -73,3 +89,19 @@ projects.forEach(pro => {
 function clear(cont) {
     cont.innerHTML = ''
 }
+
+const allSkills = document.querySelectorAll('.skill')
+
+let sec = 2;
+allSkills.forEach((s, i) => {
+    sec -= .1
+    s.style.animation = `${sec}s floatEl infinite linear`
+})
+
+
+document.querySelectorAll('.view__work__btn').forEach(b => {
+    b.addEventListener('click', (e)=>{
+        e.preventDefault()
+        document.querySelector(".projects").scrollIntoView({ behavior: "smooth" });
+    })
+})

@@ -145,6 +145,7 @@ nav {
     color: var(--off-white);
 
     transition: all 0.3s ease-in-out;
+    animation: pulse 1s infinite linear;
 }
 
 
@@ -163,6 +164,21 @@ nav {
     padding: 7rem 0 3rem;
 }
 
+.available{
+    background: var(--light-base);
+    width: fit-content;
+    align-self: center;
+    padding: .5rem 2rem;
+    border-radius: 30px;
+    border: 1px solid var(--light-brown);
+}
+
+.available::before{
+    content: "";
+    background: red;
+    padding: 5px;
+    border-radius: 50%;
+}
 
 
 .ismail__profile:hover {
@@ -187,6 +203,8 @@ nav {
 .ismail__links a:first-child {
     background: var(--golden-yellow);
     color: var(--warm-dark);
+    border: none;
+    animation: pulse 2s infinite linear;
     /* border-color: black; */
 }
 
@@ -225,14 +243,20 @@ nav {
 
     color: var(--warm-dark);
     transition: 0.3s ease-in-out;
+    
+
 }
+
+
+
+
 
 .skill:hover {
     background: var(--light-base);
     /* cursor: pointer; */
     transform: translateY(-10px);
     transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skills {
@@ -394,10 +418,27 @@ nav {
     text-decoration: underline;
 }
 
+@keyframes floatEl {
+        0%{
+        transform: translateY(-3px);
+
+    }
+    50%{
+        transform: translateY(5px);
+        
+        
+    }
+    
+    100%{
+        transform: translateY(-3px);
+        
+    }
+}
+
 @keyframes pulse {
     0%{
         transform: scale(0.95);
-        box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.76);
+        /* box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.76); */
     }
     50%{
         transform: scale(1.1);
@@ -405,7 +446,7 @@ nav {
     
     100%{
         transform: scale(0.95);
-        box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.76);
+        /* box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.76); */
     }
 }
 
@@ -435,6 +476,12 @@ nav {
     transform: translateY(-5px);
 
     transition: all 0.3s ease-in-out;
+}
+
+.project__wrapper{
+    display: grid;
+    grid-auto-columns: repeat(3, 1fr);
+    background: red;
 }
 
     #menu-close {
@@ -475,7 +522,7 @@ nav {
         border-bottom: 5px solid var(--light-brown);
         transition: all 0.3s ease-in-out;
         /* transition-delay: .8s; */
-        //width: 100/3%;
+        
     }
 
     .journey:hover {
