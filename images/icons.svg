@@ -60,6 +60,80 @@
   <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
 </symbol>
 
+
+  <symbol id="icon-gmail" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.02L19.8 6H4.2Zm15.8 1.68-7.53 5.82a.75.75 0 0 1-.94 0L4 7.68V18h16V7.68Z"/>
+  </symbol>
+
+  <symbol id="icon-linkedin" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+  </symbol>
+  
+  
+   <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+   <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z" />
+   <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.52 3.63 1.42 5.13L2 22l5.09-1.53a9.85 9.85 0 0 0 4.95 1.34c5.46 0 9.91-4.45 9.91-9.9C21.95 6.45 17.5 2 12.04 2Zm0 17.88c-1.6 0-3.09-.44-4.36-1.21l-.31-.19-3.02.9.9-2.94-.2-.32a8.13 8.13 0 0 1-1.24-4.21c0-4.5 3.66-8.16 8.23-8.16 4.56 0 8.23 3.66 8.23 8.16 0 4.5-3.67 8.16-8.23 8.16Z" />
+ </symbol>
+ 
+ 
+  <!-- HTML5 — official #E34F26 -->
+<symbol id="icon-html5" viewBox="0 0 512 512">
+  <clipPath id="html5-left-half"><rect x="0" y="0" width="256" height="512"/></clipPath>
+  <path d="M32 0 L480 0 L435 400 L256 472 L77 400 Z" fill="#F16529"/>
+  <path d="M32 0 L480 0 L435 400 L256 472 L77 400 Z" fill="#E34F26" clip-path="url(#html5-left-half)"/>
+  <text x="256" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="230" font-weight="700" fill="#EBEBEB">5</text>
+  <g clip-path="url(#html5-left-half)">
+    <text x="256" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="230" font-weight="700" fill="#FFFFFF">5</text>
+  </g>
+</symbol>
+
+<!-- CSS3 official shield badge, viewBox 0 0 512 512 -->
+<symbol id="icon-css3" viewBox="0 0 512 512">
+  <clipPath id="css3-left-half"><rect x="0" y="0" width="256" height="512"/></clipPath>
+  <path d="M32 0 L480 0 L435 400 L256 472 L77 400 Z" fill="#1572B6"/>
+  <path d="M32 0 L480 0 L435 400 L256 472 L77 400 Z" fill="#33A9DC" clip-path="url(#css3-left-half)"/>
+  <text x="256" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="230" font-weight="700" fill="#EBEBEB">3</text>
+  <g clip-path="url(#css3-left-half)">
+    <text x="256" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="230" font-weight="700" fill="#FFFFFF">3</text>
+  </g>
+</symbol>
+
+  <!-- JavaScript — official #F7DF1E -->
+  <symbol id="icon-javascript" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#F7DF1E"/>
+    <text x="12" y="16.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#000">JS</text>
+  </symbol>
+
+  <!-- React — official atom mark #61DAFB on dark #20232A -->
+  <symbol id="icon-react" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#20232A"/>
+    <g stroke="#61DAFB" stroke-width="1" fill="none">
+      <ellipse cx="12" cy="12" rx="7.5" ry="3" />
+      <ellipse cx="12" cy="12" rx="7.5" ry="3" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="7.5" ry="3" transform="rotate(120 12 12)"/>
+    </g>
+    <circle cx="12" cy="12" r="1.6" fill="#61DAFB"/>
+  </symbol>
+
+  <!-- DOM Manipulation — no official brand, using site accent (sky) -->
+  <symbol id="icon-dom" viewBox="0 0 24 24">
+    <path fill="none" stroke="#5fa8d3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+      d="M7.5 4.5 3 12l4.5 7.5M16.5 4.5 21 12l-4.5 7.5M14 5l-4 14"/>
+  </symbol>
+
+  <!-- REST API — no official brand, using site accent (amber) -->
+  <symbol id="icon-restapi" viewBox="0 0 24 24">
+    <path fill="none" stroke="#e8a33d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+      d="M4 8h13M17 8l-3-3M17 8l-3 3M20 16H7M7 16l3-3M7 16l3 3"/>
+  </symbol>
+
+  <!-- CSS Animation — no official brand, using site accent (sky) -->
+  <symbol id="icon-cssanim" viewBox="0 0 24 24">
+    <circle cx="6" cy="12" r="2.2" fill="#5fa8d3"/>
+    <circle cx="12" cy="12" r="2.2" fill="#5fa8d3" opacity="0.6"/>
+    <circle cx="18" cy="12" r="2.2" fill="#5fa8d3" opacity="0.3"/>
+  </symbol>
+
 <!-- LIVE URL / EXTERNAL LINK icon -->
 <symbol id="icon-live-url" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />

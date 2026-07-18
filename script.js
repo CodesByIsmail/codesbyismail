@@ -28,6 +28,7 @@ const projects = [
         projectImgUrl: '/images/quran-quizapp-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://quranquiz-app.vercel.app/',
+        stacks: ['HTML5', 'JS', 'CSS'],
         projectInfo: 'Tahfidh is a Quran Quiz App tailored to help you find potholes in your memorization. You take Hifdh Test, find where you are mixing, get to knwo where yiur memorization needs to be corrected. Hifdh ai here for that'
     },
     
@@ -36,6 +37,7 @@ const projects = [
         projectImgUrl: '/images/rest-countries-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/rest-countries-api',
         liveUrl: 'https://rest-countries-api-five-alpha.vercel.app/',
+        stacks: ['HTML5', 'JS', 'CSS'],
         projectInfo: 'Rest Countries API, get to know about all countries in the world. Know about their population, currency, borders and more about every countries.'
     },
     
@@ -44,6 +46,7 @@ const projects = [
         projectImgUrl: '/images/screenclipo-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://screenclipo.vercel.app/',
+        stacks: ['HTML5', 'JS', 'CSS'],
         projectInfo: 'ScreenClipo is screen recorder for PC. Capture your screen, save yiur locally on your PC all on ScreenClipo.'
     },
     
@@ -52,6 +55,7 @@ const projects = [
      projectImgUrl: '/images/dimaj-image.jpg',
      gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
      liveUrl: 'https://dimajenterprise.vercel.app/',
+     stacks: ['HTML5', 'JS', 'CSS'],
      projectInfo: "Dimaj Enterprises is a health-focused business rooted in the heart of Obafemi Awolowo University, Ile-Ife. We are passionate about one simple mission — adding value to nature's raw materials and making them fit and safe for human consumption."
  }
 ]
@@ -59,6 +63,8 @@ const projects = [
 const projectContainer = document.querySelector('.project__wrapper')
 // <a href="${pro.gitUrl}">Code <svg width="24" height="24"><use href="/images/icons.svg#icon-github"></use></svg></a>
 function render(pro) {
+    // console.log(pro.stacks.map((i) => i))
+    // ${pro.stacks.map((i) => `<span>${i}<span>`)}
     const markup = `
     <div class="project">
                             <img src="${pro.projectImgUrl}" alt="">
@@ -69,8 +75,8 @@ function render(pro) {
                             </p>
                             <div class="project__links">
                                  
-                                 
                                 <a href="${pro.liveUrl}">Live URL<svg width="24" height="24"><use href="/images/icons.svg#icon-live-url"></use></svg></a>
+                                <a href="${pro.gitUrl}">Code<svg width="24" height="24"><use href="/images/icons.svg#icon-github"></use></svg></a>
                             </div>
 
                             </div>
