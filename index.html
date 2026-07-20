@@ -8,7 +8,7 @@
 
         <!-- Favicon links -->
         
-        <link rel="shortcut icon" href="/images/ismail-proflle.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/profile.jpg" type="image/x-icon">
         <!-- Google fonts links -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,27 +41,30 @@
         <nav>
             <div class="navbar container">
                 <div>
-                    <h1 class="logo"><span>Is</span>mail</h1>
+                    <h1 class="logo">
+                        <img src="/images/profile.jpg" alt="" />
+                        Ismail</h1>
                 </div>
 
                 <div class="navbar__toggle" id="mobile-menu">
-                    <i id="menu-open" class="uil uil-bars"></i>
+                 <svg id="menu-open" width="24" height="24" color="#fbbf24"><use href="/images/icons.svg#icon-menu"></use></svg>
                 
                 </div>
                 <div class="nav__list">
-                    <i id="menu-close" class="uil uil-times"></i>
+                 <svg id="menu-close" width="24" height="24" color="#fbbf24"><use href="/images/icons.svg#icon-close"></use></svg>
+                 <!--    <i id="menu-close" class="uil uil-times"></i> -->
                     
                     <div class="nav__links">
-                        <a href=""> About </a>
-                        <a href=""> Projects </a>
-                        <a href=""> Contact </a>
+                        <a href="" class="about__btn"> About </a>
+                        <a href="" class="view__work__btn"> Projects </a>
+                        <a href="" class="contact__btn"> Contact </a>
                     </div>
                 </div>
             </div>
         </nav>
 
     <main>
-    <section class="hero__section">
+    <section class="about hero__section">
                 <div class="ismail__descr">
 
                     <h1>Hi, I'm Ismail</h1>
@@ -72,7 +75,7 @@
 
                 <div class="ismail__links">
                     <a href="" class="view__work__btn">View my work &rarr;</a>
-                    <a href="#contact">Get In touch</a>
+                    <a href="" class="contact__btn">Get In touch</a>
                 </div>
             </section>
 
@@ -107,7 +110,7 @@
                 </div>
          </section>
          
-         <section id="contact">
+         <section class="contact" id="contact">
 <div class="container">
 <div>
                      <h2>Let's Work Together</h2>

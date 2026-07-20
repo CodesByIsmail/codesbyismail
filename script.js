@@ -29,7 +29,7 @@ const projects = [
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://quranquiz-app.vercel.app/',
         stacks: ['HTML5', 'JS', 'CSS'],
-        projectInfo: 'Tahfidh is a Quran Quiz App tailored to help you find potholes in your memorization. You take Hifdh Test, find where you are mixing, get to knwo where yiur memorization needs to be corrected. Hifdh ai here for that'
+        projectInfo: 'Tahfidh is a Quran Quiz App that helps you solidify your Hifdh. You pick a Surah, set a time and test solid your Hifdh is. Memorize,take a test, know where you stand.'
     },
     
         {
@@ -47,7 +47,7 @@ const projects = [
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://screenclipo.vercel.app/',
         stacks: ['HTML5', 'JS', 'CSS'],
-        projectInfo: 'ScreenClipo is screen recorder for PC. Capture your screen, save yiur locally on your PC all on ScreenClipo.'
+        projectInfo: 'ScreenClipo is screen recorder app for PC. Capture your screen and save locally on your PC. Build, share your screen and save.'
     },
     
      {
@@ -105,9 +105,23 @@ allSkills.forEach((s, i) => {
 })
 
 
-document.querySelectorAll('.view__work__btn').forEach(b => {
-    b.addEventListener('click', (e)=>{
+// document.querySelectorAll('.view__work__btn').forEach(b => {
+//     b.addEventListener('click', (e)=>{
+//         e.preventDefault()
+//         document.querySelector(".projects").scrollIntoView({ behavior: "smooth" });
+//     })
+// })
+
+
+function smoothScroll(el, target) {
+    document.querySelectorAll(`.${el}`).forEach(b => {
+    b.addEventListener('click', (e) => {
         e.preventDefault()
-        document.querySelector(".projects").scrollIntoView({ behavior: "smooth" });
+        document.querySelector(`.${target}`).scrollIntoView({ behavior: "smooth" });
     })
 })
+}
+
+smoothScroll('view__work__btn', 'projects')
+smoothScroll('about__btn', 'about')
+smoothScroll('contact__btn', 'contact')

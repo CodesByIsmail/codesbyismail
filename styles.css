@@ -83,6 +83,16 @@ section{
     font-family: 'Playwrite DE SAS', cursive;
     font-size: 1.5rem;
     color: var(--golden-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    
+    img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
 }
 
 
