@@ -53,7 +53,7 @@ const projects = [
      {
      name: 'Dimaj Enterprise Landing Page',
      projectImgUrl: '/images/project-images/dimaj-image.jpg',
-     gitUrl: 'https://github.com/CodesByIsmail/dimajenterprise',
+     gitUrl: 'https://github.com/CodesByIsmail/dimaj-enterprise',
      liveUrl: 'https://dimajenterprise.vercel.app/',
      stacks: ['HTML5', 'JS', 'CSS'],
      projectInfo: "Dimaj Enterprises is a health-focused business rooted in the heart of Obafemi Awolowo University, Ile-Ife. We are passionate about one simple mission — adding value to nature's raw materials and making them fit and safe for human consumption."
