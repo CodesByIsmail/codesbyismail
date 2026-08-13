@@ -25,7 +25,7 @@ newSet.forEach(a => {
 const projects = [
     {
         name: 'Tahfidh',
-        projectImgUrl: '/images/quran-quizapp-image.png',
+        projectImgUrl: '/images/project-images/quran-quizapp-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://quranquiz-app.vercel.app/',
         stacks: ['HTML5', 'JS', 'CSS'],
@@ -34,7 +34,7 @@ const projects = [
     
         {
         name: 'Rest Countries API',
-        projectImgUrl: '/images/rest-countries-image.png',
+        projectImgUrl: '/images/project-images/rest-countries-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/rest-countries-api',
         liveUrl: 'https://rest-countries-api-five-alpha.vercel.app/',
         stacks: ['HTML5', 'JS', 'CSS'],
@@ -43,7 +43,7 @@ const projects = [
     
     {
         name: 'ScreenClipo',
-        projectImgUrl: '/images/screenclipo-image.png',
+        projectImgUrl: '/images/project-images/screenclipo-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
         liveUrl: 'https://screenclipo.vercel.app/',
         stacks: ['HTML5', 'JS', 'CSS'],
@@ -52,12 +52,32 @@ const projects = [
     
      {
      name: 'Dimaj Enterprise Landing Page',
-     projectImgUrl: '/images/dimaj-image.jpg',
-     gitUrl: 'https://github.com/CodesByIsmail/quranquiz.github.io',
+     projectImgUrl: '/images/project-images/dimaj-image.jpg',
+     gitUrl: 'https://github.com/CodesByIsmail/dimajenterprise',
      liveUrl: 'https://dimajenterprise.vercel.app/',
      stacks: ['HTML5', 'JS', 'CSS'],
      projectInfo: "Dimaj Enterprises is a health-focused business rooted in the heart of Obafemi Awolowo University, Ile-Ife. We are passionate about one simple mission — adding value to nature's raw materials and making them fit and safe for human consumption."
+ },
+ 
+ 
+ {
+     name: 'SpeakTexto - Speech-Text Converter',
+     projectImgUrl: '/images/project-images/speaktexto.png',
+     gitUrl: 'https://github.com/CodesByIsmail/speaktexto.git',
+     liveUrl: 'https://speaktexto-pro.vercel.app/',
+     stacks: ['HTML5', 'JS', 'CSS'],
+     projectInfo: "SpeakTexto is a converter tool where you can convert your spech to text and copy it directly to your clipboard. Also convert your text to audio. You write, it recite. It reads, you enjoy. It does it job while you enjoy your words"
+ },
+      {
+     name: 'ISCALCO - Modern Calculator',
+     projectImgUrl: '/images/project-images/iscalco.png',
+     gitUrl: 'https://github.com/CodesByIsmail/iscalco-calc.git',
+     liveUrl: 'https://iscalco-calc.vercel.app/',
+     stacks: ['HTML5', 'JS', 'CSS'],
+     projectInfo: "ISCALCO is modern calculator where you cannot only calculate by pressing your keyboard, you can calculate with only your voice, check previous calculation history, on and off while not in use and also temporary close it when you are done using it."
  }
+ 
+ 
 ]
 
 const projectContainer = document.querySelector('.project__wrapper')
