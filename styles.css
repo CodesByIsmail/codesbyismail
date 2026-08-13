@@ -361,8 +361,8 @@ nav {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    
 
     margin-top: 3rem;
 }
@@ -373,8 +373,9 @@ nav {
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     height: fit-content;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.85);
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
+    max-width: 40rem;
+    height: auto;
     img{
         border-radius: 10px 10px 0 0;
     }
@@ -575,6 +576,16 @@ footer{
     transform: translateY(-5px);
 
     transition: all 0.3s ease-in-out;
+}
+
+.project__wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-items: space-between;
+    align-items: center;
+    width: 100%;
+
 }
 
 /* .project__wrapper{
