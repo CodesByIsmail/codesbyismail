@@ -1,17 +1,19 @@
 const openToggle = document.getElementById('menu-open');
 const closeToggle = document.getElementById('menu-close');
 const navMenu = document.querySelector('.nav__list');
+const projectContainer = document.querySelector('.project__wrapper')
+const articlesContainer = document.querySelector('.articles__wrapper')
 
-openToggle.addEventListener('click', function () {
+openToggle.addEventListener('click', function() {
     navMenu.style.display = 'block';
     openToggle.style.display = 'none'
 });
-closeToggle.addEventListener('click', function () {
+closeToggle.addEventListener('click', function() {
     navMenu.style.display = 'none';
-        openToggle.style.display = 'block';
+    openToggle.style.display = 'block';
 });
 
-const options = [2, 3,3,4,5,6]
+const options = [2, 3, 3, 4, 5, 6]
 
 const newSet = new Set(options);
 
@@ -32,7 +34,7 @@ const projects = [
         projectInfo: 'Tahfidh is a Quran Quiz App that helps you solidify your Hifdh. You pick a Surah, set a time and test solid your Hifdh is. Memorize,take a test, know where you stand.'
     },
     
-        {
+    {
         name: 'Rest Countries API',
         projectImgUrl: '/images/project-images/rest-countries-image.png',
         gitUrl: 'https://github.com/CodesByIsmail/rest-countries-api',
@@ -50,39 +52,46 @@ const projects = [
         projectInfo: 'ScreenClipo is screen recorder app for PC. Capture your screen and save locally on your PC. Build, share your screen and save.'
     },
     
-     {
-     name: 'Dimaj Enterprise Landing Page',
-     projectImgUrl: '/images/project-images/dimaj-image.jpg',
-     gitUrl: 'https://github.com/CodesByIsmail/dimaj-enterprise',
-     liveUrl: 'https://dimajenterprise.vercel.app/',
-     stacks: ['HTML5', 'JS', 'CSS'],
-     projectInfo: "Dimaj Enterprises is a health-focused business rooted in the heart of Obafemi Awolowo University, Ile-Ife. We are passionate about one simple mission — adding value to nature's raw materials and making them fit and safe for human consumption."
- },
- 
- 
- {
-     name: 'SpeakTexto - Speech-Text Converter',
-     projectImgUrl: '/images/project-images/speaktexto.png',
-     gitUrl: 'https://github.com/CodesByIsmail/speaktexto.git',
-     liveUrl: 'https://speaktexto-pro.vercel.app/',
-     stacks: ['HTML5', 'JS', 'CSS'],
-     projectInfo: "SpeakTexto is a converter tool where you can convert your spech to text and copy it directly to your clipboard. Also convert your text to audio. You write, it recite. It reads, you enjoy. It does it job while you enjoy your words"
- },
-      {
-     name: 'ISCALCO - Modern Calculator',
-     projectImgUrl: '/images/project-images/iscalco.png',
-     gitUrl: 'https://github.com/CodesByIsmail/iscalco-calc.git',
-     liveUrl: 'https://iscalco-calc.vercel.app/',
-     stacks: ['HTML5', 'JS', 'CSS'],
-     projectInfo: "ISCALCO is modern calculator where you cannot only calculate by pressing your keyboard, you can calculate with only your voice, check previous calculation history, on and off while not in use and also temporary close it when you are done using it."
- }
- 
- 
+    {
+        name: 'Dimaj Enterprise Landing Page',
+        projectImgUrl: '/images/project-images/dimaj-image.jpg',
+        gitUrl: 'https://github.com/CodesByIsmail/dimaj-enterprise',
+        liveUrl: 'https://dimajenterprise.vercel.app/',
+        stacks: ['HTML5', 'JS', 'CSS'],
+        projectInfo: "Dimaj Enterprises is a health-focused business rooted in the heart of Obafemi Awolowo University, Ile-Ife. We are passionate about one simple mission — adding value to nature's raw materials and making them fit and safe for human consumption."
+    },
+    
+    
+    {
+        name: 'SpeakTexto - Speech-Text Converter',
+        projectImgUrl: '/images/project-images/speaktexto.png',
+        gitUrl: 'https://github.com/CodesByIsmail/speaktexto.git',
+        liveUrl: 'https://speaktexto-pro.vercel.app/',
+        stacks: ['HTML5', 'JS', 'CSS'],
+        projectInfo: "SpeakTexto is a converter tool where you can convert your spech to text and copy it directly to your clipboard. Also convert your text to audio. You write, it recite. It reads, you enjoy. It does it job while you enjoy your words"
+    },
+    {
+        name: 'ISCALCO - Modern Calculator',
+        projectImgUrl: '/images/project-images/iscalco.png',
+        gitUrl: 'https://github.com/CodesByIsmail/iscalco-calc.git',
+        liveUrl: 'https://iscalco-calc.vercel.app/',
+        stacks: ['HTML5', 'JS', 'CSS'],
+        projectInfo: "ISCALCO is modern calculator where you cannot only calculate by pressing your keyboard, you can calculate with only your voice, check previous calculation history, on and off while not in use and also temporary close it when you are done using it."
+    }
+    
+    
 ]
 
-const projectContainer = document.querySelector('.project__wrapper')
+const articles = [
+{
+    title: 'The MVC Architecture',
+    coverImgUrl: '/images/articles-coverimage/mvc-cover.png',
+    liveUrl: 'https://ismailthekoder.hashnode.dev/the-mvc-architecture'
+}, ]
+
 // <a href="${pro.gitUrl}">Code <svg width="24" height="24"><use href="/images/icons.svg#icon-github"></use></svg></a>
-function render(pro) {
+
+function renderProject(pro) {
     // console.log(pro.stacks.map((i) => i))
     // ${pro.stacks.map((i) => `<span>${i}<span>`)}
     const markup = `
@@ -103,13 +112,29 @@ function render(pro) {
 
                         </div>
     `
-
+    
     projectContainer.insertAdjacentHTML('beforeend', markup)
 }
 
-projects.forEach(pro => {
+function renderArticles(article) {
+    const markup = `                    <div class="article">
+    <img src="${article.coverImgUrl}" alt="article-cover-image" />
+                        
+                        <h3 class="title"><a href="${article.liveUrl}">${article.title}</a> <svg width="15" height="15">
+                                <use href="/images/icons.svg#icon-live-url""></use></svg></h3>
+                                </div>
+  `
+    
+    articlesContainer.insertAdjacentHTML('beforeend', markup)
+}
 
-    render(pro);
+
+projects.forEach(pro => {
+    renderProject(pro);
+})
+
+articles.forEach(article => {
+    renderArticles(article);
 })
 
 function clear(cont) {
@@ -125,23 +150,17 @@ allSkills.forEach((s, i) => {
 })
 
 
-// document.querySelectorAll('.view__work__btn').forEach(b => {
-//     b.addEventListener('click', (e)=>{
-//         e.preventDefault()
-//         document.querySelector(".projects").scrollIntoView({ behavior: "smooth" });
-//     })
-// })
-
 
 function smoothScroll(el, target) {
     document.querySelectorAll(`.${el}`).forEach(b => {
-    b.addEventListener('click', (e) => {
-        e.preventDefault()
-        document.querySelector(`.${target}`).scrollIntoView({ behavior: "smooth" });
+        b.addEventListener('click', (e) => {
+            e.preventDefault()
+            document.querySelector(`.${target}`).scrollIntoView({ behavior: "smooth" });
+        })
     })
-})
 }
 
 smoothScroll('view__work__btn', 'projects')
 smoothScroll('about__btn', 'about')
 smoothScroll('contact__btn', 'contact')
+smoothScroll('article__btn', 'articles')
